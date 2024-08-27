@@ -1,4 +1,3 @@
-<!-- src/views/Results.vue -->
 <template>
     <div class="container mx-auto p-4 max-w-4xl">
       <h1 class="text-4xl font-bold mb-8 text-center text-gradient">Generated Prompts</h1>
@@ -78,7 +77,8 @@
         </button>
       </div>
     </div>
-  </template>  
+  </template>
+  
   <script>
   import { ref, computed } from 'vue'
   import { useStore } from 'vuex'
@@ -200,6 +200,7 @@
     }
   }
   </script>
+  
   <style scoped>
   .text-gradient {
     background-clip: text;
