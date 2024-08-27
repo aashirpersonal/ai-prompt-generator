@@ -1,18 +1,22 @@
 module.exports = {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
-  darkMode: 'class',
+  darkMode: false,
   theme: {
     extend: {
-      backgroundColor: {
-        'glass': 'rgba(255, 255, 255, 0.1)',
+      colors: {
+        'blue-300': '#93c5fd',
       },
-      backdropFilter: {
-        'glass': 'blur(10px)',
+      backgroundColor: {
+        'glass': 'rgba(17, 25, 40, 0.75)',
       },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      opacity: ['disabled'],
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }

@@ -1,3 +1,4 @@
+<!-- src/App.vue -->
 <template>
   <div class="min-h-screen bg-gray-900 text-white">
     <nav class="p-4">
